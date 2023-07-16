@@ -69,7 +69,7 @@ typedef struct {
 } _TEEC_OperationInternal;
 
 typedef struct {
-    char header[8];// = "TCIGP000"`: version indicator (to support future format changes)
+    char header[9];// = "TCIGP000"`: version indicator (to support future format changes)
     TEEC_UUID destination;
     _TEEC_OperationInternal operation; //the data of the ongoing operation (if any)
     uint32_t ready;
